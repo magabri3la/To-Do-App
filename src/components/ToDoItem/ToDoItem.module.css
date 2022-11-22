@@ -1,0 +1,25 @@
+
+.itemContainer {
+  display: flex;
+  align-items: center;
+  padding: 16px 24px;
+  border: 1px solid var(--color-white);
+  border-radius: 24px;
+}
+
+.itemIcon {
+  width: calc(var(--mr-col) * 3);
+  align-items: center;
+}
+
+.itemButton {
+  width: calc(var(--mr-col) * 2);
+  margin-left: auto;
+  background-color: transparent;
+  border: 1px solid var(--color-black);
+  border-radius: 6px;
+}
+
+.active {
+  border: 1px solid var(--color-green-apple);
+}

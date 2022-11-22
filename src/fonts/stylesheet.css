@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'TT Travels Next';
+    src: url('TTTravelsNextTrl-Bd.woff2') format('woff2'),
+        url('TTTravelsNextTrl-Bd.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Travels Next Db';
+    src: url('TTTravelsNextTrl-DmBd.woff2') format('woff2'),
+        url('TTTravelsNextTrl-DmBd.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Travels Next Blc Outline';
+    src: url('TTTravelsNextTrl-BlcOutline.woff2') format('woff2'),
+        url('TTTravelsNextTrl-BlcOutline.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Travels Next Blc';
+    src: url('TTTravelsNextTrl-Blc.woff2') format('woff2'),
+        url('TTTravelsNextTrl-Blc.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Travels Next XLt';
+    src: url('TTTravelsNextTrl-XLt.woff2') format('woff2'),
+        url('TTTravelsNextTrl-XLt.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Travels Next Lt';
+    src: url('TTTravelsNextTrl-Lt.woff2') format('woff2'),
+        url('TTTravelsNextTrl-Lt.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Travels Next XBd';
+    src: url('TTTravelsNextTrl-XBd.woff2') format('woff2'),
+        url('TTTravelsNextTrl-XBd.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Travels Next Th';
+    src: url('TTTravelsNextTrl-Th.woff2') format('woff2'),
+        url('TTTravelsNextTrl-Th.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Travels Next Md';
+    src: url('TTTravelsNextTrl-Md.woff2') format('woff2'),
+        url('TTTravelsNextTrl-Md.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Travels Next';
+    src: url('TTTravelsNextTrl-Rg.woff2') format('woff2'),
+        url('TTTravelsNextTrl-Rg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

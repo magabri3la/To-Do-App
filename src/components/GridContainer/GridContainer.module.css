@@ -1,0 +1,25 @@
+.gridContainer {
+  width: 84% !important;
+  max-width: 480px;
+  min-width: 296px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .gridContainer {
+    width: 100% !important;
+    max-width: 592px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .gridContainer {
+    max-width: 925px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .gridContainer {
+    max-width: 1184px;
+  }
+}

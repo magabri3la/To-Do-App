@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from "react";
+import {ToDoCounter} from "./components/ToDoCounter/ToDoCounter";
+import {ToDoSearch} from "./components/ToDoSearch/ToDoSearch";
+import {ToDoList} from "./components/ToDoList/ToDoList";
+import {CreateToDoButton} from "./components/CreateToDoButton/CreateToDoButton";
+import GridContainer from "./components/GridContainer/GridContainer";
+import style from './App.module.css';
 
 function App() {
+  const [countToDos, setCountToDos] = useState(4);
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className={style.ToDoApp}>
+      <GridContainer>
+        <ToDoCounter nroToDos={countToDos}/>
+        <ToDoSearch/>
+        <ToDoList/>
+        <CreateToDoButton/>
+      </GridContainer>
+    </main>
   );
 }
 
 export default App;
+
+{/* <div className={style.containerImage}>
+  <img 
+    className={style.image} 
+    src="/assets/image-glosario.png"
+    alt="random"/>
+</div> */}
