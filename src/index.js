@@ -4,7 +4,7 @@ import './index.css';
 import './assets/fonts/stylesheet.css'
 import { App } from './components/App/App';
 
-const root = ReactDOM.createRoot(document.getElementById('app'));
+const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <App/>
 );
