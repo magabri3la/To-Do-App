@@ -1,6 +1,6 @@
 import React from 'react'
 
-function ToDoCounter({nroToDos}) {
+function ToDoCounter({nroTotalToDos, nroCompletedToDos}) {
 
   const style = {
     fontFamily: "TT Travels Next",
@@ -9,7 +9,7 @@ function ToDoCounter({nroToDos}) {
   };
 
   return (
-    <div style={style}>TodoCounter : {nroToDos}</div>
+    <div style={style}>{nroCompletedToDos}/{nroTotalToDos}</div>
   )
 }
 

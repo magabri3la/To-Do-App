@@ -1,0 +1,7 @@
+.toDoSearchContainer{}
+
+.toDoSearchInput{
+  width: 100%;
+  border: none;
+  border-bottom : 2px solid var(--color-black)
+}

@@ -7,17 +7,17 @@ function ToDoItem({completed, text, onCompleted, onDelete}) {
   if (completed) {
     css += ` ${style.active}`;
   }
-
+  
   return (
     <div className={css}>
       <span
-        onClick={onCompleted}
+        onClick={() => onCompleted(text)}
         className={style.itemIcon}>
         {completed ? '❌' : '✅'}
       </span>
       <p className={style.itemText}>{text}</p>
       <button 
-      onClick={onDelete}
+      onClick={() => onDelete(text)}
       className={style.itemButton}>🗑️</button>
     </div>
   )
