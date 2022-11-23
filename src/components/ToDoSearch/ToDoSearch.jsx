@@ -1,11 +1,13 @@
 import React from 'react';
+import { ToDoContext } from '../Context/Context';
 import style from './ToDoSearch.module.css';
 
-function ToDoSearch({searchValue, setSearchValue}) {
+function ToDoSearch () {
+  const { setSearchValue } = React.useContext(ToDoContext);
 
   const onSearchValueChange = (event) => {
     setSearchValue(event.target.value)
-  }
+  };
 
   return (
     <div className={style.toDoSearchContainer}>
@@ -16,7 +18,7 @@ function ToDoSearch({searchValue, setSearchValue}) {
         onChange={(e)=> onSearchValueChange(e)}
       />
     </div>
-  )
-}
+  );
+};
 
-export {ToDoSearch};
+export { ToDoSearch };

@@ -1,15 +1,11 @@
 import React from 'react'
+import { ToDoContext } from '../Context/Context';
 
-function ToDoCounter({nroTotalToDos, nroCompletedToDos}) {
-
-  const style = {
-    fontFamily: "TT Travels Next",
-    fontSize: "48px",
-    fontWeight: 700
-  };
+function ToDoCounter () {
+  const { toDos, completedToDos } = React.useContext(ToDoContext);
 
   return (
-    <div style={style}>{nroCompletedToDos}/{nroTotalToDos}</div>
+    <div>{completedToDos.length}/{toDos.length}</div>
   )
 }
 
