@@ -3,15 +3,18 @@ import { ToDoContext } from '../Context/Context';
 import style from './CreateToDoButton.module.css';
 
 function CreateToDoButton() {
-  const { setShowModal } = React.useContext(ToDoContext); 
+  const { showModal, setShowModal } = React.useContext(ToDoContext);
+
   const onCreateToDo = () => {
-    setShowModal(true)
+    setShowModal(!showModal)
   };
 
   return (
     <button 
       className={style.createToDoButton}
-      onClick={onCreateToDo}>➕</button>
+      onClick={onCreateToDo}>
+      {!!showModal ? 'X' : '➕'}
+      </button>
   )
 }
 

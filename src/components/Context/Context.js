@@ -29,6 +29,15 @@ function ToDoProvider (props) {
     })
   };
 
+  const onAddToDo = (text) => {
+    const newToDos = [...toDos];
+    newToDos.push({
+      text: text,
+      completed : false
+    })
+    saveToDos(newToDos);
+  }
+
   const onCompletedToDo = (text) => {
     const indexToDoText = toDos.findIndex(toDo => toDo.text === text);
     const newToDos = [...toDos];
@@ -56,6 +65,7 @@ function ToDoProvider (props) {
       setSearchValue,
       onCompletedToDo,
       onDeleteToDo,
+      onAddToDo
     }}>
       {props.children}
     </ToDoContext.Provider>

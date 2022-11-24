@@ -7,6 +7,7 @@ import { GridContainer } from "../GridContainer/GridContainer";
 import { Modal } from '../Modal/Modal';
 import style from './App.module.css';
 import { ToDoContext } from '../Context/Context';
+import { ToDoForm } from '../ToDoForm/ToDoForm';
 
 function AppUI () {
   const { showModal } = React.useContext(ToDoContext);
@@ -20,7 +21,7 @@ function AppUI () {
           <CreateToDoButton />
           {showModal && (
             <Modal id="modalCreateToDo">
-              
+              <ToDoForm/>
             </Modal>
           )}
       </GridContainer>

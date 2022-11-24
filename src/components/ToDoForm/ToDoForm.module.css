@@ -1,0 +1,22 @@
+.form {
+  display: flex;
+  flex-flow: column;
+  width: calc(var(--mr-col) * 29);
+  margin: 32px auto;
+}
+
+@media (min-width: 768px) {
+  .form {
+    width: calc(var(--mr-col) * 21);
+  }
+}
+
+@media (min-width: 1024px) {
+  .form {
+    width: calc(var(--mr-col) * 13);
+  }
+}
+
+.title {
+  font-family: 'TT Travels Next'
+}

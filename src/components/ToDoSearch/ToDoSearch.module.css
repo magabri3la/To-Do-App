@@ -1,7 +1,23 @@
-.toDoSearchContainer{}
+.toDoSearchContainer{
+  position: relative;
+}
 
 .toDoSearchInput{
   width: 100%;
   border: none;
-  border-bottom : 2px solid var(--color-black)
+  border-bottom : 2px solid var(--color-white);
+  padding: 12px 0;
+  font-size: 14px;
+}
+
+.labelSearch{
+  position: absolute;
+  top: 8px;
+}
+
+.active {
+  transition: .3s;
+  transform: translateY(-12px) scale(1);
+  font-family: "Roboto",sans-serif;
+  font-size: 12px;
 }
