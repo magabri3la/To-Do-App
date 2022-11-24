@@ -13,19 +13,19 @@ function AppUI () {
   const { showModal } = React.useContext(ToDoContext);
 
   return (
-    <main className={style.ToDoApp}>
-      <GridContainer>
-          <ToDoCounter/>
-          <ToDoSearch/>
-          <ToDoList/>
-          <CreateToDoButton />
-          {showModal && (
-            <Modal id="modalCreateToDo">
-              <ToDoForm/>
-            </Modal>
-          )}
-      </GridContainer>
-    </main>
+    <GridContainer>
+      <div className={style.ToDoApp}>
+        <ToDoCounter/>
+        <ToDoSearch/>
+        <ToDoList/>
+        <CreateToDoButton />
+        {showModal && (
+          <Modal id="modalCreateToDo">
+            <ToDoForm/>
+          </Modal>
+        )}
+      </div>
+    </GridContainer>
   );
 };
 

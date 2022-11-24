@@ -2,24 +2,39 @@
 .itemContainer {
   display: flex;
   align-items: center;
-  padding: 16px 24px;
-  border: 1px solid var(--color-white);
-  border-radius: 24px;
+  padding: 4px 0;
 }
 
 .itemIcon {
-  width: calc(var(--mr-col) * 3);
-  align-items: center;
+  width: 24px;
+  height: 24px;
 }
 
 .itemButton {
-  width: calc(var(--mr-col) * 2);
+  width: 16px;
+  height: 16px;
   margin-left: auto;
   background-color: transparent;
-  border: 1px solid var(--color-black);
+  border: none;
   border-radius: 6px;
+  padding: 0;
 }
 
 .active {
-  border: 1px solid var(--color-green-apple);
+  text-decoration-line: line-through;
+}
+
+.itemText{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 0 12px;
+}
+
+@media (min-width: 1024px) {
+  .itemText{
+    font-size: 18px;
+    line-height: 27px;
+  }
 }

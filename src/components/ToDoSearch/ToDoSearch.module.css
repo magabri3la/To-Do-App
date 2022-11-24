@@ -8,6 +8,8 @@
   border-bottom : 2px solid var(--color-white);
   padding: 12px 0;
   font-size: 14px;
+  background-color: transparent;
+  color: var(--color-white);
 }
 
 .labelSearch{

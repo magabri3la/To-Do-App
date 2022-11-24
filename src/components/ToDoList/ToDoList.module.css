@@ -1,5 +1,25 @@
 .toDoListContainer{
   display: grid;
   row-gap: 16px;
+}
+
+.title{
+  font-family: 'TT Travels Next Trl';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 50px;
   margin: 32px 0;
+}
+
+.purple{
+  color: var(--color-purple-pink);
+}
+
+.green{
+  color: var(--color-green-apple);
+}
+
+.center {
+  text-align: center;
 }

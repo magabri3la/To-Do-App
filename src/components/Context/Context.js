@@ -15,14 +15,15 @@ function ToDoProvider (props) {
   const [ showModal, setShowModal ] = React.useState(false);
   
   const completedToDos = toDos.filter((toDo) => !!toDo?.completed);
+  const pendingToDos = toDos.filter((toDo) => !toDo.completed);
   
   let searchedToDos = [];
 
   if(!searchValue.length >= 1) {
-    searchedToDos = toDos;
+    searchedToDos = pendingToDos;
   }
   else {
-    searchedToDos = toDos.filter((toDo) => {
+    searchedToDos = pendingToDos.filter((toDo) => {
       const toDoText = toDo.text.toLowerCase();
       const searchText = searchValue.toLowerCase();
       return toDoText.includes(searchText)
@@ -52,6 +53,11 @@ function ToDoProvider (props) {
     saveToDos(newToDos);
   };
 
+  console.log('completed', completedToDos);
+  console.log('pending', pendingToDos);
+  console.log('serchered', searchedToDos);
+
+
   return (
     <ToDoContext.Provider value={{
       error,
@@ -60,6 +66,7 @@ function ToDoProvider (props) {
       completedToDos,
       searchValue,
       searchedToDos,
+      pendingToDos,
       showModal,
       setShowModal,
       setSearchValue,

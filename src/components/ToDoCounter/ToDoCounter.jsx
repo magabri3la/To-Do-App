@@ -1,12 +1,13 @@
-import React from 'react'
+import React from 'react';
 import { ToDoContext } from '../Context/Context';
+import style from './ToDoCounter.module.css';
 
 function ToDoCounter () {
-  const { toDos, completedToDos } = React.useContext(ToDoContext);
+  const { toDos } = React.useContext(ToDoContext);
 
   return (
-    <div>{completedToDos.length}/{toDos.length}</div>
+    <p className={style.counterToDo}>Tasks for today - {toDos.length}</p>
   )
 }
 
-export {ToDoCounter};
+export { ToDoCounter };

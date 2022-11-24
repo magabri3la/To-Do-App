@@ -12,5 +12,14 @@
 
 
 .ToDoApp {
+  background-color: var(--color-purple-dark);
+  border-radius: 24px;
+  padding: calc(var(--mr-col) * 3);
+}
 
+@media (min-width: 768px) {
+  .ToDoApp {
+    padding: calc(var(--mr-col) * 3);
+    margin: calc(var(--mr-col) * 3);
+  }
 }
